@@ -6,7 +6,7 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup >
 import productCard from "../components/ProductItem.vue"
 
 

@@ -29,7 +29,7 @@
 
 <style></style>
 
-<script setup>
+<script setup >
 import { onMounted } from 'vue';
 import { GetProducts } from "../services/products/service";
 import useProductsHandler from "../composables/products/useProductsHandler"

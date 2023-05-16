@@ -69,7 +69,7 @@
 
     </div>
 </template>
-<script setup>
+<script setup >
 import useAuthHandler from "../composables/auth/useAuthHandler";
 
 const {
