@@ -40,7 +40,7 @@ const {
 const fetchData = async () => {
   try {
     const { data } = await GetProducts();
-    console.log(data.data)
+    // console.log(data.data)
     state.products = data.data
   } catch (error) {
     console.log(error);

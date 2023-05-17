@@ -5,12 +5,10 @@ const state = reactive({
 })
 
 export default function () {
-    const getProducts = () => {
-        console.log("print")
-    }
+  
     return {
         state,
-        getProducts
+         
     }
 
 }
