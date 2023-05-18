@@ -29,11 +29,11 @@
                     <!-- signup form -->
                     <div v-else class="card register">
                         <h1>Sign Up</h1>
-                        <q-form  class="q-gutter-md" method="post">
+                        <q-form class="q-gutter-md" method="post">
                             <q-input filled v-model="state.name" label="Your name *" hint="Name and surname" lazy-rules
                                 :rules="[val => val && val.length > 0 || 'Please type something']" />
 
-                            <q-input filled v-model="state.username2" label="username" hint="Name and surname" lazy-rules
+                            <q-input filled v-model="state.username" label="username" hint="Name and surname" lazy-rules
                                 :rules="[val => val && val.length > 0 || 'Please type something']" />
 
                             <q-input filled v-model="state.email" label="email" hint="Name and surname" lazy-rules
@@ -42,7 +42,7 @@
                             <q-input filled v-model="state.password" label="password" hint="Name and surname" lazy-rules
                                 :rules="[val => val && val.length > 0 || 'Please type something']" />
 
-                            <q-btn label="Submit" type="submit" color="primary" @click="signup" />
+                            <q-btn label="Submit" type="submit" color="primary" @click.prevent="signup" />
 
                             <p>Already have an account?
                                 <a href="#" @click="state.registerActive = !state.registerActive, emptyFields = false">
@@ -61,11 +61,11 @@
 </template>
 <script setup >
 import useAuthHandler from "../composables/auth/useAuthHandler";
-  const {
+const {
     state,
     login,
     signup
 } = useAuthHandler();
- 
- 
+
+
 </script>

@@ -17,7 +17,7 @@ interface Login {
 
 interface SignUp {
     name: string | null,
-    username2: string | null,
+    username: string | null,
     email: string | null,
     password: string | null,
 }
@@ -37,7 +37,7 @@ export default function () {
             try {
                 const { data } = await loginuser(loginPayload());
                 console.log(data.user)
-
+                console.log(data.errors.msg)
             } catch (error) {
                 console.log(error);
             }
@@ -49,7 +49,7 @@ export default function () {
         const signupPayload = (): SignUp => {
             const payload: SignUp = {
                 name: state.name,
-                username2: state.username2,
+                username: state.username,
                 email: state.email,
                 password: state.password
             }
