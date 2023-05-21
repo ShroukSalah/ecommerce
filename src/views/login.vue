@@ -22,7 +22,7 @@
                             </p>
 
                             <p>
-                                <a href="#">Forgot your password?</a>
+                                <!-- <a href="#">Forgot your password?</a> -->
                             </p>
                         </q-form>
                     </div>
