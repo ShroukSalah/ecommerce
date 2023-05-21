@@ -1,7 +1,7 @@
 import api from '../api'
 
 export const GetProducts = async () => {
-    const data = await api.get(`/products?page=1&limit=10`)
+    const data = await api.get(`/products?page=2&limit=5`)
 
     return data
 }
