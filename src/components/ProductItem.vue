@@ -40,8 +40,10 @@ const {
 const fetchData = async () => {
   try {
     const { data } = await GetProducts();
-    // console.log(data.data)
     state.products = data.data
+    state.page = data.paginationResult.page
+    state.numberOfPages = data.paginationResult.numberOfPages
+    console.log(data.paginationResult.numberOfPages)
   } catch (error) {
     console.log(error);
   }

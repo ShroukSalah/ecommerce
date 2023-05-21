@@ -4,10 +4,13 @@
     <div>
       <productCard />
     </div>
+    <div>
+      <pagination />
+    </div>
   </div>
 </template>
 <script setup >
 import productCard from "../components/ProductItem.vue"
-
+import pagination from "../components/pagination.vue"
 
 </script>

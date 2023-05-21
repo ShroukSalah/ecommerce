@@ -4,11 +4,11 @@ import HomePage from "../views/HomePage.vue";
 
 const routes = [
     {
-        path: "/home",
+        path: "/",
         name: "HomePage",
         component: HomePage,
     }, {
-        path: "/",
+        path: "/login",
         name: "LoginPage",
         component: LoginPage,
     },
